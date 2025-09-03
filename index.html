@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Top 10 Beautiful Animals & Birds</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent: rgba(255,255,255,0.9);
+      --muted: rgba(255,255,255,0.7);
+      --glass: rgba(255,255,255,0.06);
+      --radius: 12px;
+      --gap: 18px;
+      --max-w: 1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,#071022 0%, #0f1724 60%);
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      max-width:var(--max-w);
+      margin:36px auto;
+      padding:28px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:22px;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(18px,2.4vw,28px);
+      letter-spacing:0.2px;
+      color:var(--accent);
+    }
+
+    p.lead{
+      margin:4px 0 0 0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:var(--gap);
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+      transition: transform .28s cubic-bezier(.2,.9,.3,1), box-shadow .28s;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .card:focus-within,
+    .card:hover{
+      transform: translateY(-6px);
+      box-shadow: 0 18px 38px rgba(2,6,23,0.7);
+    }
+
+    .thumb{
+      width:100%;
+      aspect-ratio: 16/11;
+      display:block;
+      object-fit:cover;
+      background: linear-gradient(90deg,#071022,#0b1220);
+      transition: transform .4s cubic-bezier(.2,.9,.3,1);
+    }
+
+    .card:hover .thumb{ transform: scale(1.03); }
+
+    .meta{
+      padding:14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+    }
+
+    .title{
+      font-weight:600;
+      font-size:15px;
+      margin:0;
+      color:var(--accent);
+    }
+
+    .subtitle{
+      margin:6px 0 0 0;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    .tag{
+      font-size:11px;
+      padding:6px 8px;
+      border-radius:10px;
+      background:var(--glass);
+      color:var(--muted);
+    }
+
+    /* simple responsive top bar */
+    .topbar{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+
+    .logo{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      letter-spacing:0.6px;
+      color:var(--accent);
+    }
+
+    .logo .dot{
+      width:10px;
+      height:10px;
+      background:linear-gradient(45deg,#7dd3fc,#60a5fa);
+      border-radius:50%;
+      box-shadow:0 3px 10px rgba(96,165,250,0.18);
+    }
+
+    footer{
+      margin-top:20px;
+      color:var(--muted);
+      font-size:12px;
+      text-align:center;
+    }
+
+    /* small screens tweak */
+    @media (max-width:420px){
+      .wrap{ padding:16px; margin:18px auto; }
+      .meta{ padding:12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="logo"><span class="dot" aria-hidden="true"></span> Beautiful Creatures</div>
+        <p class="lead">Top 10 beautiful animals & birds (images loaded from online)</p>
+      </div>
+      <div class="topbar">
+        <div class="tag">Gallery • 10 items</div>
+      </div>
+    </header>
+
+    <main class="grid" aria-live="polite">
+      <!-- 1 -->
+      <article class="card">
+        <img class="thumb" alt="Peacock displaying feathers" src="https://source.unsplash.com/featured/?peacock" />
+        <div class="meta">
+          <div>
+            <div class="title">Peacock</div>
+            <div class="subtitle">Indian peafowl — dazzling tail feathers</div>
+          </div>
+          <div class="tag">Bird</div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <img class="thumb" alt="Tiger in the wild" src="https://source.unsplash.com/featured/?tiger" />
+        <div class="meta">
+          <div>
+            <div class="title">Tiger</div>
+            <div class="subtitle">Striped big cat — majestic & powerful</div>
+          </div>
+          <div class="tag">Animal</div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <img class="thumb" alt="Fox standing outdoors" src="https://source.unsplash.com/featured/?fox" />
+        <div class="meta">
+          <div>
+            <div class="title">Fox</div>
+            <div class="subtitle">Cunning with a vibrant coat</div>
+          </div>
+          <div class="tag">Animal</div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <img class="thumb" alt="Elephant closeup" src="https://source.unsplash.com/featured/?elephant" />
+        <div class="meta">
+          <div>
+            <div class="title">Elephant</div>
+            <div class="subtitle">Gentle giant with strong presence</div>
+          </div>
+          <div class="tag">Animal</div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <img class="thumb" alt="Zebra herd in grassland" src="https://source.unsplash.com/featured/?zebra" />
+        <div class="meta">
+          <div>
+            <div class="title">Zebra</div>
+            <div class="subtitle">Bold black & white stripes</div>
+          </div>
+          <div class="tag">Animal</div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <img class="thumb" alt="Lion lying in grass" src="https://source.unsplash.com/featured/?lion" />
+        <div class="meta">
+          <div>
+            <div class="title">Lion</div>
+            <div class="subtitle">The regal king of the savannah</div>
+          </div>
+          <div class="tag">Animal</div>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <img class="thumb" alt="Kingfisher perched" src="https://source.unsplash.com/featured/?kingfisher" />
+        <div class="meta">
+          <div>
+            <div class="title">Kingfisher</div>
+            <div class="subtitle">Vivid colors and swift dives</div>
+          </div>
+          <div class="tag">Bird</div>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <img class="thumb" alt="Hummingbird hovering at flower" src="https://source.unsplash.com/featured/?hummingbird" />
+        <div class="meta">
+          <div>
+            <div class="title">Hummingbird</div>
+            <div class="subtitle">Tiny, rapid-winged nectar feeder</div>
+          </div>
+          <div class="tag">Bird</div>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <img class="thumb" alt="Owl close up portrait" src="https://source.unsplash.com/featured/?owl" />
+        <div class="meta">
+          <div>
+            <div class="title">Owl</div>
+            <div class="subtitle">Mysterious nocturnal raptor</div>
+          </div>
+          <div class="tag">Bird</div>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card">
+        <img class="thumb" alt="Giant panda sitting" src="https://source.unsplash.com/featured/?panda" />
+        <div class="meta">
+          <div>
+            <div class="title">Panda</div>
+            <div class="subtitle">Iconic black & white bear</div>
+          </div>
+          <div class="tag">Animal</div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      Images are loaded dynamically from Unsplash (public photo source) using keyword queries.
+    </footer>
+  </div>
+</body>
+</html>
